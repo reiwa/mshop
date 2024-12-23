@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+
+    <!--正直よくわかっていない項目。meta charsetとtitle、meta name="description"は設定しておくべき-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MOISSHOP official</title>
+    <meta name="description" content="MOISSHOPのホームページへようこそ！MOIS SHOPとは、我が大宮国際中等教育学校、通称MOISのもと運営されている学校内企業です。">
+    <!--OGP設定-->
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="MOISSHOP公式WEBサイト">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="MOISSHOPの公式WEBサイトです。">
+    <meta property="og:image" content="moisshop_icon_3_min.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ReBoot_Of_">
+    <meta property="og:site_name" content="MOISSHOP">
+    <meta property="og:locate" content="ja_JP">
+    <link rel="canonical" href="index.html">
+    <link rel="icon" href="img/moisshop_icon_2_min.webp" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/moisshop_icon_2_min.webp" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/moisshop_icon_2_min.webp" sizes="48x48" type="image/png">
+    <link rel="icon" href="img/moisshop_icon_2_min.webp" sizes="62x62" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="moisshop_icon_3_min.webp">
+    <meta name="msapplication-TileImage" content="moisshop_icon_3_min.webp">
+    <meta name="msapplication-TileColor" content="#1717eb">
+    <link rel="icon" type="image/png" href="img/moisshop_icon_3_min.webp">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+    <!--各種ファイルの読み込み-->
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="smartphonesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  </head>
+  <!--左上の検証マークを選択し、ホームページの要素をクリックすることでそれが記述されている箇所を表示させることができます。-->
+
+  <!--css、javascriptを表示するには上の欄から「sources」をクリック-->
+  <body>
+
+    <!--divタグは万能なものの、他のタグを知っていればそちらを積極的に使うほうが良い。-->
+
+    <!--classは一つしか要素がない時に、idはページスクロール、javascriptで読み取る、または複数設定する要素があるときに使う。-->
+
+    <div class="wrap">
+    <div id="home" class="big-bg">
+      <header class="page-header wrapper">
+      <div class="waku" id="waku"></div>
+
+        <!--herfリンクで＃を設定するとページトップに戻ることができる。-->
+
+        <!--loading="eager"または"lazy"を画像に設定することで、画像を素早く読み込んだりゆっくり読み込んだりすることができる。表示速度の改善に。-->
+
+        <a href="#"><h1><img id="scr" class="logo" src="img/moisshop_h1_2_min.webp" loading="eager" alt="MOISSHOPのタイトル" title="MOISSHOPロゴ"></h1></a>
+        <nav>
+          <ul class="main-nav" id="main-nav">
+            <li><a id="n1" href="#what-is-moisshop">MOIS SHOPとは？</a></li>
+            <li style="width:100px;"><a id="n2" href="#product-introduction">商品紹介</a></li>
+            <li><a id="n3" href="#news">ニュース</a></li>
+          </ul>
+
+          <!--onclick=""イベントでクリック時にjavascript関数を実行する。-->
+
+          <img class="lang" onclick="langchange();" src="img/lang_new_min.webp"><div class="langtxt">EN</div>
+        </nav>
+        <div id="small-device-nav" onclick="nav();"><div class="snav-line" style="top:5px;z-index:2;" id="snav1"></div><div class="snav-line" style="top:19px;z-index:1;" id="snav2"></div><div class="snav-line" style="top:33px;" id="snav3"></div></div>
+
+        <div class="snav-box" id="snavfade">
+          <h1><a id="sn">メニュー</a></h1>
+          <div style="width:100%;height:2px;background-color:deepskyblue;"></div>
+          <div class="snav-inbox">
+            <a href="#" onclick="nav();"><li id="sn0">トップへ</li></a>
+            <a href="#what-is-moisshop" onclick="nav();"><li id="sn1">MOIS SHOPとは？</li></a>
+            <a href="#product-introduction" onclick="nav();"><li id="sn2">商品紹介</li></a>
+            <a href="#news" onclick="nav();"><li id="sn3">ニュース</li></a>
+          </div>
+        </div>
+        <div id="snavback" class="snavbackground" onclick="nav();"></div>
+      </header>
+    </div>
+    <div class="main-box">
+    <img class="imgeffect" src="img/moisshop_icon_3_min.webp">
+  <div class="schedule">
+    <div id="slg1">次の一般販売は、</div>
+    <div style="font-size:55px;">01/01</div>
+    <div id="slg2" style="margin-top:-50px;font-size:25px;margin-left:-20px">2024年＿＿＿＿＿＿＿です。</div>
+    <div id="slg3" style="font-size:25px;margin-left:180px">お楽しみに！</div>
+    <a id="slg4" style="font-size:25px;color:#3870e6;" href="https://www.city-saitama.ed.jp/ohmiyakokusai-h/access.html" target="_blank">アクセス</a>
+  </div>
+  <br>
+  <div class="news" style="font-size:30px;">お知らせ
+    <div style="font-size:16px;color:#ED7D31;">このホームページは個人で制作されたものであり、非公式のものです。<br>ウェブデザインに興味のある方は学習・入門教材としてご活用いただけると幸いです。（F12またはFn+F12でファイルを閲覧できます。）ご連絡は<br><img src="img/ac.png" width="200px"><br>まで</div>
+  </div>
+  <div id="what-is-moisshop" style="height:60px;width:50px;"></div>
+  <div class="main-content wrapper">
+    <article>
+      <div class="what-moisshop">
+        <div class="moisshop-title">
+          <h2 class="what-moisshop-title">MOIS SHOPとは?</h2>
+          <div class="moisshop-overview"><br>
+            <p id="t1">MOIS SHOPとは、我が大宮国際中等教育学校、通称MOISのもと運営されている学校内企業です。</p>
+            <p id="t2">ここMOIS SHOPでは、MOIS限定キーホルダーなどの記念品から、消しゴムなどの実用的な文房具などを開発、販売しています。MOISの生徒の皆さん、記念に一ついかがでしょうか?</p>
+            <p id="t3">MOIS SHOP運営係一同、新たな製品開発に向けて精進していきます!よろしくお願いします!</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="separate-line"></div>
+    <aside class="right-box-title"><br><h2 class="link">リンク一覧</h2><br>
+      <div class="right-box-linkbox">
+        <a href="https://www.city-saitama.ed.jp/ohmiyakokusai-h/" target="_blank"><img src="img/mois_image_min.jpg" class="mois-img" alt="大宮国際中等教育学校校舎"><p id="moislink" style="color:#3870e6;">大宮国際公式ホームページ</p></a>
+      </div>
+    </aside>
+  </div>
+  </div>
+
+    <!--計画性がないとこのように雑な調整が入ることになるので注意。-->
+
+    <div style="height:500px;width:50px;"></div>
+    <div id="product-introduction" style="height:140px;width:50px;"></div>
+    <h2 class="what-moisshop-title" style="font-family: 'M PLUS Rounded 1c';text-align:center;">商品紹介</h2>
+    <div class="product-bigbox">
+      <div class="moisshop-title">
+          <div id="pbbutton" onclick="fade()">製品を表示する</div>
+          <!--★★★商品を追加する際はid="fadeの数を増やす。Javascriptの書き換えも。★★★-->
+          <!--書式：<div id="fade1" class="product-box"><img src="img/1.jpg" loading="lazy" alt="製品名" title="製品名"><div class="pdEmphasize"><div class="pdEmText"><b>New!</b></div></div><div class="pdEmArrow"></div>製品名<div class="product-description-line">価格：200円<br>入手方法：不明<br>---<br>概要</div></div>-->
+          <div id="fade1" class="product-box"><img src="img/1.jpg" loading="lazy" alt="製品名" title="製品名"><div class="pdEmphasize"><div class="pdEmText"><b>New!</b></div></div><div class="pdEmArrow"></div>製品名<div class="product-description-line">価格：200円<br>入手方法：ガチャポン・購入<br>---<br>かわいらしい小型のネクタイキーホルダーです。</div></div>
+          <div id="fade2" class="product-box"><img src="img/2.jpg" loading="lazy" alt="製品名" title="製品名"><div class="pdEmphasize"><div class="pdEmText"><b>New!</b></div></div><div class="pdEmArrow"></div>製品名<div class="product-description-line">説明</div></div>
+          <div id="fade3" class="product-box"><img src="img/3.jpg" loading="lazy" alt="製品名" title="製品名">製品名<div class="product-description-line">説明</div></div>
+          <div id="fade4" class="product-box"><img src="img/4.jpg" loading="lazy" alt="製品名" title="製品名">製品名<div class="product-description-line">説明</div></div>
+          <div id="fade5" class="product-box"><img src="img/5.jpg" loading="lazy" alt="製品名" title="製品名">製品名<div class="product-description-line">説明</div></div>
+          <div id="fade6" class="product-box"><img src="img/6.jpg" loading="lazy" alt="製品名" title="製品名">製品名<div class="product-description-line">説明</div></div>
+      </div>
+    </div>
+    <div id="news" style="height:110px;width:1px;"></div>
+    <div class="news">News
+      <!--★★★ニュースを追加する際はid="newsの数を増やす。Javascriptの書き換えも。★★★-->
+      <!--書式：<li class="news-topic" id="news1"><div class="arrow"></div>2021.10.22 ニュース</li>-->
+      <li class="news-topic" id="news1"><div class="arrow"></div>2021.11.16 ホームページが公開される日は来るのか。<p style="color:#3870e6">#大宮国際</p><br><br><br></li>
+      <li class="news-topic" id="news2"><div class="arrow"></div>a</li>
+      <li class="news-topic" id="news3"><div class="arrow"></div>i</li>
+      <li class="news-topic" id="news4"><div class="arrow"></div>u</li>
+      <li class="news-topic" id="news5"><div class="arrow"></div>e</li>
+      <li class="news-topic" id="news6"><div class="arrow"></div>o</li>
+      <div class="newsbutton" id="newsbutton" onclick="shownews()">もっと見る</div>
+    </div>
+    <footer onclick="showft();">
+      <small><a><span id="hidden"><br>Website, logo made by <span class="hidden">Team Web Qubers</span></span><br>Copyrights &copy; MOIS All Rights</a>
+      <a id="reserved">Reserved.</a></small>
+    </footer>
+    </div>
+
+  <!--scriptにdeferを設定することでhtml部分が読み込み終わった後にスクリプトを実行することができる。asyncを付ければ同時並行で。表示速度の改善用。-->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" defer></script>
+  <script src="movementsheet.js" defer></script>
+  </body>
+</html>
