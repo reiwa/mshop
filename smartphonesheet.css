@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+@media (max-width:600px){
+  .what-moisshop-title {
+    font-size: 25px;
+  }
+
+  .news {
+    font-size:25px;
+  }
+
+  #home {
+    background-size: 110%;
+    transition: 0.5s;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .separate-line {
+    display: none;
+  }
+
+  article {
+    width: 95%;
+  }
+
+  .what-moisshop {
+    margin: 0 auto;
+  }
+
+  .right-box-title {
+    width: 99%;
+  }
+
+  .main-box {
+    height:850px;
+    /*要素が商品紹介に被る場合ここを調整*/
+  }
+
+  .moisshop-overview {
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .logo {
+    width: 330px;
+    padding-left: 0%;
+    left: 10px;
+    top: 7px;
+  }
+
+  footer {
+    line-height: 10px;
+    padding-top: 35px;
+  }
+
+  .what-moisshop {
+    width: 95%;
+  }
+
+  .right-box-linkbox {
+    width: 80%;
+  }
+
+  .right-box-linkbox {
+    margin: 0 auto;
+  }
+
+  .right-box-linkbox img {
+    width: 100%;
+  }
+
+  .right-box-linkbox p {
+    width: 100%;
+  }
+
+  .news {
+    width: 90%;
+  }
+}
+@media (max-width:1200px){
+  .product-box{ width: 30.8% }
+}
+@media (max-width:950px){
+  .lang {
+    width:50px;
+    top: 47.5px;
+    right: 1px;
+  }
+  .langtxt {
+    top: 53.5px;
+    right: 5px;
+  }
+}
+@media (max-width:800px){
+  .product-box{ width: 47%; }
+}
+@media (max-width:550px){
+  .product-box{
+    width: 96%;
+    border:solid 3px skyblue;
+    border-radius: 20px;
+  }
+  .product-description-line{
+    border-top: solid 3px skyblue;
+  }
+  .product-bigbox{
+    margin-left: 40px;
+    margin-right: 40px;
+    border: none;
+    height: auto;
+  }
+  .moisshop-overview{
+    height: auto;
+  }
+}
+
