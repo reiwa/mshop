@@ -214,7 +214,7 @@
 
         document.getElementById('fade6').innerHTML = '<img src="img/6.jpg" width="100%" height="175px" alt="Name" title="Name">Name<div class="product-description-line">Price：nantoka Yen<br>Purchase：Hanbai way<br>---<br>Description</div>';
 
-        document.getElementById('news1').innerHTML = '<div class="arrow"></div>18.11.2021 I want MOIS SHOP website to be shared.';
+        document.getElementById('news1').innerHTML = '<div class="arrow"></div>08.01.2025 Webpage is shared.';
         document.getElementById('scr').src = "img/moisshop_h1_2_EN_min.webp";
       } else {
         window.location.reload();
